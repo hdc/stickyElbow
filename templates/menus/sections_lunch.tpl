@@ -5,7 +5,6 @@
 </pop:block>
 
 <pop:block region="tse_main">
-    <pop:content>
         <h1 class="hdr_primary"><span><pop:section.title/></span></h1>
         <div class="tse_main">
             <pop:categories from="menus" lunch_category="true">
@@ -27,5 +26,4 @@
         </div>
 
         <pop:include template="menus/_menu_aside" />
-    </pop:content>
 </pop:block>
