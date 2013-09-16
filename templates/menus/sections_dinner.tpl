@@ -6,7 +6,13 @@
 
 <pop:block region="tse_main">
     <pop:content>
-        <h1><pop:title/></h1>
+        <ul>
+            <pop:sections from="menus">
+                <li class="<pop:active>active</pop:active>">
+                    <a href="<pop:permalink/>"><pop:title/></a>
+                </li>
+            </pop:sections>
+        </ul>
         <div class="section">
             <div class="entry_container">
                 <pop:include template="menus/_menu_entry" />

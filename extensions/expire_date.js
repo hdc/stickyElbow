@@ -1,0 +1,1 @@
+var date = new Date(), tomorrow = new Date(); tomorrow = date.setTime(date.getTime() + (60 * 60 * 24 * 1000)); returb site.search({filters:{ section: ..., date: { from: date, to: tomorrow } })
