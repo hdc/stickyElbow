@@ -1,23 +1,31 @@
-//Index styles
-.inset_container
-	+pad(1,1)
 
-.section_item
-	background: lighten($tan,20%)
-	+span-columns(2,6)
-	+nth-omega(3n)
-
-	.menus_image
-		width: 100%
-		img
-			@extend %display-block
-			width: 100%
-
-.entry_container
+.menu_section
+	@extend %clearfix
+	border-top: 1px solid darken($tan,30%)
 	color: $gray
-	+pad(1,1)
+	+padding-leader(1)
+	+trailer(1)
+	//+susy-grid-background
 
-	.menu_entry
+	.menu_section_intro
+		+span-columns(2,8)
+
+	.menu_list
+		@extend %clearfix
+		+span_columns(6 omega,8)
+
+		li
+			margin-bottom: rhythm(1.5)
+			+span_columns(2,6)
+			+nth-omega(3n)
+			&:nth-child(3n+1)
+				@extend %clear
+
+	.menu_category
+		@extend %header-stack
+		@extend %caps
+
+	.menu_item
 		+trailer(1.25)
 
 		.entry_title

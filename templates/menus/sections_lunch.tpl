@@ -6,29 +6,26 @@
 
 <pop:block region="tse_main">
     <pop:content>
-        <ul>
-            <pop:sections from="menus">
-                <li class="<pop:active>active</pop:active>">
-                    <a href="<pop:permalink/>"><pop:title/></a>
-                </li>
-            </pop:sections>
-        </ul>
-        <div class="section">
-            <div class="entry_container">
-                <pop:include template="menus/_menu_entry" />
-            </div>
-        </div>
-    </pop:content>
-</pop:block>
-
-<pop:block region="aside">
-    <aside class="tse_aside">
-        <h3>Sections</h3>
-
-        <ul class="aside_nav">
-            <pop:categories>
-            <li class="<pop:active>current</pop:active>"><a href="<pop:permalink/>"><pop:title/></a></li>
+        <h1 class="hdr_primary"><span><pop:section.title/></span></h1>
+        <div class="tse_main">
+            <pop:categories from="menus" lunch_category="true">
+                <article class="menu_section">
+                    <div class="menu_section_intro">
+                        <h2 class="menu_category"><pop:title/></h2>
+                        <pop:description><p><pop:description/></p></pop:description>
+                    </div>
+                    <ul class="menu_list">
+                        <pop:entries order="title ASC" in_lunch_menu="true">
+                            <li class="menu_item">
+                                <h3 class="entry_title"><pop:title/> <span class="price">$<pop:price/></span></h3>
+                                <pop:description wrap="p" class="menu_description"/>
+                            </li>
+                        </pop:entries>
+                    </ul>
+                </article>
             </pop:categories>
-        </ul>
-    </aside>
+        </div>
+
+        <pop:include template="menus/_menu_aside" />
+    </pop:content>
 </pop:block>
