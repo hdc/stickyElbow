@@ -12,7 +12,6 @@
                 <pop:include template="menus/_menu_entry" />
             </div>
         </div>
-
     </pop:content>
 </pop:block>
 
