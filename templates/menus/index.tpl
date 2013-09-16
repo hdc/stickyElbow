@@ -1,0 +1,1 @@
+<pop:redirect to="<pop:section from='dinner'><pop:permalink/></pop:section>"></pop:redirect>

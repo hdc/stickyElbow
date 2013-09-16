@@ -1,0 +1,38 @@
+.tse_aside
+
+	h3
+		@extend %center-text
+		@extend %caps
+		@extend %header-stack
+		@extend %no-margin
+		@extend %icon
+		@extend %icon-bookmark
+		border-bottom: 1px dotted darken(#e0dfcf, 8%)
+		color: $gray
+		font-weight: normal
+		letter-spacing: em(1px)
+		padding: rhythm(1.5) 0 rhythm(.5) 0
+		+adjust-font-size-to($ms3)
+
+		&:before
+			@extend %position-absolute
+			top: rhythm(-.5)
+			left: 35%
+			color: $blue
+			+adjust-font-size-to($ms4)
+
+
+.aside_nav
+	padding: rhythm(.65)
+	> li
+		margin-bottom: rhythm(.45)
+		a
+			#{$link}
+				@extend %display-block
+				@extend %color-transition
+				color: $gray
+			#{$focus}
+				color: $orange
+		&.current a
+			color: $orange
+

@@ -1,0 +1,242 @@
+@import compass
+
+@font-face
+ font-family: 'geared'
+ src: url('../../../_fonts/gearedslab-webfont.eot')
+ src: url('../../../_fonts/gearedslab-webfont.eot?#iefix') format('embedded-opentype'), url('../../../_fonts/gearedslab-webfont.woff') format('woff'),url('../../../_fonts/gearedslab-webfont.ttf') format('truetype'),url('../../../_fonts/gearedslab-webfont.svg#geared_slabregular') format('svg')
+ font-weight: normal
+ font-style: normal
+
+
+$tan: #e0dfcf 
+$gray: #383b3e
+$orange: #f26845
+
+$base-font-size: 16px
+$base-line-height: 24px
+
+
+
+$serif: 'Andada', serif
+$slab: 'geared', serif
+
+
++establish-baseline()
+
+.visuallyhidden 
+ border: 0
+ clip: rect(0 0 0 0)
+ height: 1px
+ margin: -1px
+ overflow: hidden
+ padding: 0
+ position: absolute
+ width: 1px
+
+body
+ background: #e0dfcf url(../../img/landing_background_02.jpg) no-repeat 0 -100px
+ background-size: cover
+ font-family: $serif
+
+a
+ text-align: center
+
+//HEADER
+//============================
+header
+ position: fixed
+ top: 0
+ left: 0
+ bottom: 0
+ width: 265px
+ background: $gray
+ +box-shadow($gray 0 0 5px 0)
+ @media only screen and (max-width: 830px)
+  right: 0
+  bottom: auto
+  height: 100px
+  width: 100%
+  @media only screen and (max-width : 480px)
+   height: 55px
+   position: relative
+   
+   
+
+ .logo
+  background: $tan
+  width: 265px
+  height: 140px
+  display: block
+
+  @media only screen and (max-width: 830px)
+   background: none
+   margin: 0 auto
+
+  @media only screen and (max-width : 480px)
+   width: 165px
+   height: 140px
+   
+
+  figure
+   padding: 30px 15px 0 15px
+   @media only screen and (max-width: 830px)
+    padding-top: 0
+
+img
+ width: 100%
+
+.name
+ @extend .visuallyhidden
+
+.app_main
+ margin-left: 265px
+ padding: 30px
+ text-align: center
+ height: 100%
+ @media only screen and (max-width: 830px)
+  margin: 0 rhythm(1) 0 rhythm(1)
+  padding: rhythm(10) 0 rhythm(1)
+ @media only screen and (max-width : 480px)
+  padding-top: rhythm(3)
+
+
+
+
+.contact_panel
+ position: fixed
+ top: 250px
+ left: 0
+ width: 265px
+ @media only screen and (max-width: 830px)
+  position: relative
+  top: auto
+  width: 100%
+  background: $gray
+  +box-shadow($gray 0 0 5px 0)
+
+ span[itemprop="telephone"] a
+  border-bottom: 1px solid darken($gray,10%)
+  padding-bottom: 10px
+  color: $tan
+  text-align: center
+  text-decoration: none
+  display: block
+  +adjust-font-size-to(32px)
+ 
+ div[itemprop="address"]
+  border-top: 1px solid lighten($gray,10%)
+  border-bottom: 1px solid darken($gray,10%)
+  padding-top: 10px
+  padding-bottom: 10px
+  color: $tan
+  text-align: center
+  display: block
+
+ .hours
+  border-top: 1px solid lighten($gray,10%)
+  padding-top: 10px
+  padding-bottom: 20px
+  color: $tan
+  text-align: center
+  display: block
+  h3
+   +leader(0)
+   +trailer(.25)
+  p
+   margin: 0
+
+
+.app_main
+ h1
+  color: $gray
+  font-family: $slab
+  text-transform: uppercase
+  font-weight: normal
+  +adjust-font-size-to(68px)
+  +leader(3.5)
+  +trailer(0)
+  @media only screen and (max-width: 830px)
+   +leader(0)
+  @media only screen and (max-width : 480px)
+   +adjust-font-size-to(42px,1.75)
+
+ h2
+  color: $gray
+  font-weight: normal
+  padding: 0 rhythm(1)
+  +adjust-font-size-to(20px,1.15)
+  +leader(0)
+  +trailer(2)
+  @media only screen and (max-width : 480px)
+   +adjust-font-size-to(16px,1)
+   +trailer(1)
+
+.intro
+ p
+  color: $gray
+  padding: 0 rhythm(4)
+  +adjust-font-size-to(18px)
+  @media only screen and (max-width : 480px)
+   padding: 0 rhythm(.5)
+   +adjust-font-size-to(16px,1)
+  
+
+
+
+
+//Form
+.share_panel
+ margin-top: rhythm(1)
+ label
+  @extend .visuallyhidden
+  
+ input
+  padding: rhythm(.25) rhythm(.5)
+  height: rhythm(1.25,20px)
+  color: $gray
+  border: 1px solid lighten($gray,50%)
+  width: 25%
+  font-family: $serif
+  +border-radius(3px)
+  +inline-block
+  +adjust-font-size-to(20px)
+  +adjust-leading-to(1.25,20px)
+  @media only screen and (max-width : 480px)
+   +adjust-font-size-to(16px)
+   +adjust-leading-to(1.25,16px)
+   width: 100%
+   padding: rhythm(.25) rhythm(0)
+
+ button
+  padding: rhythm(.25) rhythm(.5)
+  color: #fff
+  border: 0
+  background-color: $orange
+  font-family: $serif
+  margin-left: rhythm(-.25)
+  border: 1px solid darken($orange,15%)
+  border-left: none
+  +border-top-right-radius(3px)
+  +border-bottom-right-radius(3px)
+  +inline-block
+  +adjust-font-size-to(20px)
+  +adjust-leading-to(1.25,20px)
+  @media only screen and (max-width : 480px)
+   +adjust-font-size-to(16px)
+   +adjust-leading-to(1.25,16px)
+   +border-top-left-radius(3px)
+   +border-bottom-left-radius(3px)
+   margin-top: rhythm(.5)
+   width: 100%
+   margin-left: 0
+
+
+//AddThis
+.social_widgets
+ margin: rhythm(2) auto
+ a
+  text-align: center
+
+  
+
+  

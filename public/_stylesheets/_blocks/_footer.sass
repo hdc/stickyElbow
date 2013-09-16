@@ -1,0 +1,42 @@
+.tse_footer
+	@extend %position-relative
+	@extend %clearfix
+	height: em(65px)
+	border-top: 1px solid darken(#e0dfcf, 10%)
+	background: lighten($tan,20%)
+	color: $gray
+	z-index: 3
+	+padding-leader(1)
+	+padding-trailer(1)
+
+	.block
+		+span-columns(4,8)
+		+adjust-font-size-to($ms-2)
+		padding: 0 rhythm(1)
+
+		h5
+			border-bottom: 1px dotted $gray
+			+adjust-font-size-to($normpx)
+			+leader(0)
+			+trailer(.5)
+
+		p
+			+trailer(0)
+			+leader(0)
+
+
+
+		a
+			#{$link}
+				@extend %color-transition
+				color: lighten($gray,20%)
+
+			#{$focus}
+				color: $gray
+
+
+
+		&.legal
+			color: lighten($gray,20%)
+			text-align: right
+			+omega

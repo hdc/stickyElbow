@@ -1,0 +1,81 @@
+// Styles out the top nav bar
+
+.top_bar
+	@extend %position-relative
+	height: rhythm(4.5)
+	background: $blue
+	padding: rhythm(.85) 0 0 rhythm(1)
+	width: 100%
+	z-index: 3
+
+	h1
+		@extend %float-left
+		@extend %caps
+		@extend %header-stack
+		color: $tan
+		font-weight: normal
+		letter-spacing: em(1px)
+		+adjust-font-size-to($ms3,0)
+		+adjust-leading-to(1,$ms1)
+		&:after
+			content: "/"
+			margin-left: rhythm(.25)
+
+	.sub_nav
+		@extend %float-left
+		margin: 0 0 0 rhythm(.25)
+		> li
+			@extend %float-left
+
+			a
+				#{$link}
+					@extend %color-transition
+					color: $gray
+					+adjust-font-size-to($ms1)
+					&:after
+						content: "/"
+						margin: 0 rhythm(.25)
+				#{$focus}
+					color: $tan
+
+			&.current a
+				color: $tan
+
+
+.contact_panel
+	color: $gray
+	z-index: 5
+
+
+	ul
+		@extend %clearfix
+		@extend %no-margin
+		@extend %no-padding
+		+adjust-font-size-to($ms-1)
+
+		> li
+			@extend %float-left
+			margin-right: rhythm(2.5)
+
+			a
+				#{$link}
+					color: $gray
+
+
+			.tse_phone
+				@extend %text-bold
+				@extend %display-block
+				@extend %icon
+				@extend %icon-phone
+
+			.tse_location
+				@extend %text-bold
+				@extend %display-block
+				@extend %icon
+				@extend %icon-location
+
+			.tse_hours
+				@extend %text-bold
+				@extend %display-block
+				@extend %icon
+				@extend %icon-clock
