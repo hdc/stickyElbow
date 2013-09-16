@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="340352cc-3d7b-4342-8075-373879003383" name="Default" comment="" />
+    <list default="true" id="340352cc-3d7b-4342-8075-373879003383" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/menus/_menu_entry.tpl" afterPath="$PROJECT_DIR$/templates/menus/_menu_entry.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="sticky.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/_base.tpl" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379035820724" ignored="false" />
@@ -21,7 +25,7 @@
     <file path="/site.sass" changelist="340352cc-3d7b-4342-8075-373879003383" time="1376936035188" ignored="false" />
     <file path="/style.css" changelist="340352cc-3d7b-4342-8075-373879003383" time="1376939463757" ignored="false" />
     <file path="/_fonts.sass" changelist="340352cc-3d7b-4342-8075-373879003383" time="1378955311311" ignored="false" />
-    <file path="/_menu_entry.tpl" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379050077455" ignored="false" />
+    <file path="/_menu_entry.tpl" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379293896703" ignored="false" />
     <file path="/_size.sass" changelist="340352cc-3d7b-4342-8075-373879003383" time="1377827051987" ignored="false" />
     <file path="/_modular-scale.scss" changelist="340352cc-3d7b-4342-8075-373879003383" time="1377994623264" ignored="false" />
     <file path="/index.tpl" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379035887126" ignored="false" />
@@ -29,7 +33,7 @@
     <file path="/_extends.sass" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379038620041" ignored="false" />
     <file path="/_contact_panel.tpl" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379040593317" ignored="false" />
     <file path="/menus.sass" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379036103676" ignored="false" />
-    <file path="/Dummy.txt" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379293218170" ignored="false" />
+    <file path="/Dummy.txt" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379293861813" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +157,16 @@
           <file leaf-file-name="_menu_entry.tpl" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/menus/_menu_entry.tpl">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+                <state line="7" column="19" selection-start="422" selection-end="422" vertical-scroll-proportion="0.11679644">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -213,6 +226,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitLogSettings">
     <option name="myDateState">
       <MyDateState />
@@ -221,7 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/_partials/_gfonts_script.tpl" />
         <option value="$PROJECT_DIR$/public/_stylesheets/_blocks/_footer.sass" />
         <option value="$PROJECT_DIR$/public/_stylesheets/site.sass" />
         <option value="$PROJECT_DIR$/templates/menus/index.tpl" />
@@ -236,14 +251,15 @@
         <option value="$PROJECT_DIR$/templates/_partials/_contact_panel.tpl" />
         <option value="$PROJECT_DIR$/public/_stylesheets/menus.sass" />
         <option value="$PROJECT_DIR$/templates/menus/sections.tpl" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/templates/menus/_menu_entry.tpl" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-5" />
-    <option name="y" value="22" />
+    <option name="x" value="36" />
+    <option name="y" value="73" />
     <option name="width" value="2560" />
     <option name="height" value="1342" />
   </component>
@@ -388,6 +404,16 @@
               <option name="myItemId" value="sticky" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sticky" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sticky" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -444,16 +470,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sticky" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sticky" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -562,10 +578,10 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="web.server" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="sticky" serverId="a4124c06-43a6-4512-96c0-501f906d9c9c" autoUpload="true">
     <servers>
@@ -615,7 +631,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="22" width="2560" height="1342" extended-state="0" />
+    <frame x="36" y="73" width="2560" height="1342" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20294599" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -623,7 +639,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21320605" sideWeight="0.797054" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21479714" sideWeight="0.797054" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -699,13 +715,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_blocks/_footer.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/_stylesheets/_base/_size.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="4" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" />
@@ -800,9 +809,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/menus/_menu_entry.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+        <state line="7" column="19" selection-start="422" selection-end="422" vertical-scroll-proportion="0.11679644">
           <folding />
         </state>
       </provider>

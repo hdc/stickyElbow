@@ -5,5 +5,5 @@
                 <h3 class="entry_title"><pop:title/> <span class="price">$<pop:price/></span></h3>
                 <pop:description wrap="p" class="menu_description"/>
             </article>
-    </pop:entries>
+    </pop:entries> 
 </pop:categories>
