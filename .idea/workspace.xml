@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340352cc-3d7b-4342-8075-373879003383" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/menus/_menu_entry.tpl" afterPath="$PROJECT_DIR$/templates/menus/_menu_entry.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/menus/sections.tpl" afterPath="$PROJECT_DIR$/templates/menus/sections.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sticky.iws" />
@@ -34,6 +36,8 @@
     <file path="/_contact_panel.tpl" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379040593317" ignored="false" />
     <file path="/menus.sass" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379036103676" ignored="false" />
     <file path="/Dummy.txt" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379293861813" ignored="false" />
+    <file path="/README.md" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379294608976" ignored="false" />
+    <file path="/.gitignore" changelist="340352cc-3d7b-4342-8075-373879003383" time="1379294820192" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,46 +64,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.48183653">
       <split-first>
         <leaf>
-          <file leaf-file-name="_layout.sass" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/_stylesheets/_layout.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="64" column="27" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home.sass" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/_stylesheets/home.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="30" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_footer.sass" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/_stylesheets/_blocks/_footer.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="23" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="menus.sass" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="menus.sass" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/_stylesheets/menus.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.26002166">
+                <state line="16" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_common.sass" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/_stylesheets/_common.sass">
+          <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="19" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+                <state line="5" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.07928118">
                   <folding />
                 </state>
               </provider>
@@ -114,33 +91,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_fonts.sass" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/_stylesheets/_general/_fonts.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="20" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_root.sass" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/_stylesheets/_general/_root.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_topBar.sass" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/_stylesheets/_blocks/_topBar.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="46" column="0" selection-start="757" selection-end="757" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -148,25 +98,25 @@
           <file leaf-file-name="sections.tpl" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/menus/sections.tpl">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="12" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+                <state line="5" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="-3.125">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_menu_entry.tpl" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="_menu_entry.tpl" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/menus/_menu_entry.tpl">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="19" selection-start="422" selection-end="422" vertical-scroll-proportion="0.11679644">
+                <state line="7" column="18" selection-start="421" selection-end="421" vertical-scroll-proportion="-4.375">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="1" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.016251354">
                   <folding />
                 </state>
               </provider>
@@ -237,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/_stylesheets/_blocks/_footer.sass" />
         <option value="$PROJECT_DIR$/public/_stylesheets/site.sass" />
         <option value="$PROJECT_DIR$/templates/menus/index.tpl" />
         <option value="$PROJECT_DIR$/templates/index.tpl" />
@@ -250,16 +199,17 @@
         <option value="$PROJECT_DIR$/public/_stylesheets/home.sass" />
         <option value="$PROJECT_DIR$/templates/_partials/_contact_panel.tpl" />
         <option value="$PROJECT_DIR$/public/_stylesheets/menus.sass" />
+        <option value="$PROJECT_DIR$/templates/menus/_menu_entry.tpl" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/menus/sections.tpl" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/templates/menus/_menu_entry.tpl" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="36" />
-    <option name="y" value="73" />
+    <option name="x" value="-3" />
+    <option name="y" value="22" />
     <option name="width" value="2560" />
     <option name="height" value="1342" />
   </component>
@@ -631,7 +581,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="73" width="2560" height="1342" extended-state="0" />
+    <frame x="-3" y="22" width="2560" height="1342" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20294599" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -715,51 +665,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_base/_size.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_layout.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="27" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/menus/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="74" selection-start="74" selection-end="74" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_general/_fonts.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_general/_extends.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="4" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="10" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/_partials/_head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/layouts/_base.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
@@ -774,20 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_blocks/_topBar.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="757" selection-end="757" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/_stylesheets/home.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="30" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/_partials/_contact_panel.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="14" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0">
@@ -795,30 +686,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/menus/sections.tpl">
+    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_blocks/_footer.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="12" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+        <state line="23" column="23" selection-start="425" selection-end="425" vertical-scroll-proportion="0.37378114">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/_stylesheets/menus.sass">
+    <entry file="file://$PROJECT_DIR$/public/_stylesheets/home.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.26002166">
+        <state line="7" column="30" selection-start="143" selection-end="143" vertical-scroll-proportion="0.015856236">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_layout.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="27" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.80972517">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_common.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="19" selection-start="467" selection-end="467" vertical-scroll-proportion="0.31712472">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_general/_fonts.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="63" selection-end="63" vertical-scroll-proportion="0.01607717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_general/_root.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_blocks/_topBar.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="757" selection-end="757" vertical-scroll-proportion="0.3498943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_stylesheets/_general/_extends.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="4" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_stylesheets/menus.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/menus/_menu_entry.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="422" selection-end="422" vertical-scroll-proportion="0.11679644">
+        <state line="7" column="18" selection-start="421" selection-end="421" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.07928118">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/menus/sections.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.016251354">
           <folding />
         </state>
       </provider>
