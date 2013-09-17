@@ -19,6 +19,7 @@ $focus: '&:hover, &:focus, &:active'
 body
 	@extend %serif-stack
 	background: $tan
+	background-attachment: fixed
 
 a
 	#{$link}
@@ -29,8 +30,13 @@ a
 		color: $linkColorHover
 
 .tse_header
-	background: lighten($tan,20%)
+	background:
+		color: lighten($tan,20%)
+		position: center top
+		attachment: fixed
+		repeat: no-repeat
 	border-bottom: 1px solid darken(#e0dfcf, 10%)
+	+background-size(cover)
 
 .hdr_primary
 	@extend %position-relative

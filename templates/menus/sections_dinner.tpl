@@ -1,4 +1,5 @@
 <pop:layout name="_base" />
+<pop:block region="body_class">menu</pop:block>
 
 <pop:block region="stylesheets">
     <pop:stylesheet name="/_stylesheets/menus.css"/>
@@ -10,8 +11,8 @@
 
 <pop:block region="tse_main">
 
-    <div class="tse_header" <pop:section.page_header_image>style="background: url('<pop:src/>')no-repeat center top fixed; background-size:cover;"</pop:section.page_header_image>>
-        <pop:section.title wrap="h1" class="hdr_primary" style="color: <pop:section.text_color/>;" />
+    <div class="tse_header" <pop:section.page_header_image> style="background-image: url('<pop:src/>');</pop:section.page_header_image>">
+        <h1 class="hdr_primary" style="color:<pop:section.text_color/>;"><pop:section.title/></h1>
     </div>
 
         <div class="tse_main">
