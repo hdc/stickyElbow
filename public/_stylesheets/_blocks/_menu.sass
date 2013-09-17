@@ -3,16 +3,23 @@
 	@extend %clearfix
 	border-top: 1px solid darken($tan,30%)
 	color: $gray
-	+padding-leader(1)
+	+padding-leader(1.5)
 	+trailer(1)
 	//+susy-grid-background
+
+	&:first-of-type
+		border-top: none
 
 	.menu_section_intro
 		+span-columns(2,8)
 
+		p
+			@extend %no-margin
+
 	.menu_list
 		@extend %clearfix
 		+span_columns(6 omega,8)
+		+trailer(0)
 
 		li
 			margin-bottom: rhythm(1)
@@ -24,6 +31,8 @@
 	.menu_category
 		@extend %header-stack
 		@extend %caps
+		margin-bottom: 0
+		+adjust-font-size-to($ms3)
 
 	.menu_item
 		+trailer(1.25)
@@ -32,7 +41,8 @@
 			@extend %header-stack
 			@extend %caps
 			margin: 0
-			+adjust-font-size-to($ms2)
+			+adjust-font-size-to($ms1)
+			+trailer(.15)
 
 			.price
 				&:before

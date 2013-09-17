@@ -28,40 +28,23 @@ a
 	#{$focus}
 		color: $linkColorHover
 
+.tse_header
+	background: lighten($tan,20%)
+	border-bottom: 1px solid darken(#e0dfcf, 10%)
 
 .hdr_primary
 	@extend %position-relative
 	@extend %center-text
 	@extend %header-stack
 	@extend %caps
-	padding: 0 rhythm(.25)
 	font-weight: bold
 	color: darken($tan,70%)
-	letter-spacing: 0.05em
-	padding: rhythm(1.5) 0 rhythm(.5) 0
-	+adjust-font-size-to($ms3)
-	+text-shadow(rgba(darken($tan,70%), 0.07) 0.1em 0.1em 0)
-	+leader(1)
-	+trailer(1)
+	letter-spacing: em(2px)
+	padding: rhythm(1) 0 rhythm(1) 0
+	+adjust-font-size-to($ms7)
+	+text-shadow(rgba(darken($gray,70%), 0.07) 0.1em 0.1em 0)
+	+trailer(0)
 
-	span
-		@extend %display-inline-block
-		background: $tan
-		padding: 0 rhythm(.5)
-		position: relative
-		z-index: 3
-
-	&:before
-		@extend %display-block
-		@extend %position-absolute
-		border-top: 2px dotted darken($tan,20%)
-		content: ""
-		height: 0.1em
-		left: 0
-		margin-top: -0.1em
-		top: 50%
-		width: 100%
-		z-index: 1
 
 .section_description
 	@extend %center-text

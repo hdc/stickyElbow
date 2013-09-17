@@ -4,8 +4,16 @@
     <pop:stylesheet name="/_stylesheets/menus.css"/>
 </pop:block>
 
+<pop:block region="top_bar">
+    <pop:include template="menus/_menu_subNav" />
+</pop:block>
+
 <pop:block region="tse_main">
-        <h1 class="hdr_primary"><span><pop:section.title/></span></h1>
+
+        <div class="tse_header">
+            <pop:section.title wrap="h1" class="hdr_primary"/>
+        </div>
+
         <div class="tse_main">
             <pop:categories from="menus" lunch_category="true">
                 <article class="menu_section">
@@ -24,6 +32,4 @@
                 </article>
             </pop:categories>
         </div>
-
-        <pop:include template="menus/_menu_aside" />
 </pop:block>

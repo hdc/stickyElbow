@@ -34,7 +34,6 @@
     <div class="tse_wrapper">
 
         <section class="top_bar">
-            <pop:include template="_partials/_contact_panel" />
             <pop:region name="top_bar"/>
         </section>
 

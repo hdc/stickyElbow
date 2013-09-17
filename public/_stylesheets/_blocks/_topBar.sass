@@ -3,27 +3,28 @@
 .top_bar
 	@extend %position-relative
 	height: rhythm(4.5)
-	background: $blue
-	padding: rhythm(.85) 0 0 rhythm(1)
+	background: $orange
+	padding: rhythm(1.5) 0 0 rhythm(1)
 	width: 100%
 	z-index: 3
 
-	h1
+	.page_title
 		@extend %float-left
 		@extend %caps
 		@extend %header-stack
 		color: $tan
 		font-weight: normal
 		letter-spacing: em(1px)
-		+adjust-font-size-to($ms3,0)
+		+adjust-font-size-to($ms4,0)
 		+adjust-leading-to(1,$ms1)
+
 		&:after
 			content: "/"
 			margin-left: rhythm(.25)
 
 	.sub_nav
 		@extend %float-left
-		margin: 0 0 0 rhythm(.25)
+		margin: rhythm(.40) 0 0 rhythm(.25)
 		> li
 			@extend %float-left
 
@@ -32,14 +33,20 @@
 					@extend %color-transition
 					color: $gray
 					+adjust-font-size-to($ms1)
+
 					&:after
 						content: "/"
-						margin: 0 rhythm(.25)
+						margin: 0 rhythm(.25) 0 rhythm(.25)
+						color: $gray
+
 				#{$focus}
 					color: $tan
 
 			&.current a
 				color: $tan
+
+				&:after
+					color: $gray
 
 
 .contact_panel

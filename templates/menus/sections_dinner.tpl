@@ -4,9 +4,16 @@
     <pop:stylesheet name="/_stylesheets/menus.css"/>
 </pop:block>
 
+<pop:block region="top_bar">
+    <pop:include template="menus/_menu_subNav" />
+</pop:block>
+
 <pop:block region="tse_main">
 
-        <h1 class="hdr_primary"><span><pop:section.title/></span></h1>
+    <div class="tse_header" <pop:section.page_header_image>style="background: url('<pop:src/>')no-repeat center top fixed; background-size:cover;"</pop:section.page_header_image>>
+        <pop:section.title wrap="h1" class="hdr_primary" style="color: <pop:section.text_color/>;" />
+    </div>
+
         <div class="tse_main">
             <pop:categories from="menus" dinner_category="true">
                 <article class="menu_section">
@@ -25,7 +32,5 @@
                 </article>
             </pop:categories>
         </div>
-
-        <pop:include template="menus/_menu_aside" />
 
 </pop:block>
