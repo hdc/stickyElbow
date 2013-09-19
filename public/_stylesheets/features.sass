@@ -1,0 +1,51 @@
+//-----------------------------------------------------------------------------
+// Base
+
+@import common
+
+
+//-----------------------------------------------------------------------------
+// Blocks
+
+.feature_section
+	@extend %clearfix
+	border-top: 1px solid darken($tan,30%)
+	color: $gray
+	+padding-leader(1.5)
+	+trailer(1)
+	//+susy-grid-background
+
+	&:first-of-type
+		border-top: none
+
+	.feature_list
+		@extend %clearfix
+		+trailer(0)
+
+		li
+			margin-bottom: rhythm(1)
+			+span_columns(2,8)
+			+nth-omega(4n)
+			&:nth-child(4n+1)
+				@extend %clear
+
+	.feature_item
+		+trailer(1.25)
+
+		.entry_title
+			@extend %header-stack
+			@extend %caps
+			margin: 0
+			+adjust-font-size-to($ms1)
+			+trailer(.15)
+
+			.price
+				&:before
+					content: "/"
+					margin-right: rhythm(.15)
+				&:after
+					content: "/"
+					margin-left: rhythm(.15)
+
+		.menu_description
+			+leader(0)

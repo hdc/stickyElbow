@@ -3,7 +3,7 @@
 
 
 <pop:block region="stylesheets">
-	<pop:stylesheet name="/_stylesheets/menus.css"/>
+	<pop:stylesheet name="/_stylesheets/features.css"/>
 </pop:block>
 
 <pop:block region="top_bar">
@@ -12,31 +12,21 @@
 <pop:block region="tse_main">
 
 	<div class="tse_header" <pop:section.header_image> style="background-image: url('<pop:src/>');</pop:section.header_image>">
-		<h1 class="hdr_primary" style="color:<pop:section.text_color/>;"><pop:section.title/></h1>
+		<h1 class="hdr_primary" style="color:<pop:section.text_color/>;"><pop:section.title/> for <pop:content.updated_at format="mm/dd" /></h1>
 	</div>
 
-
+<pop:content>
 	<div class="tse_main">
-		<pop:categories from="features">
-			<article class="menu_section">
-				<div class="menu_section_intro">
-					<h2 class="menu_category"><pop:title/></h2>
-					<pop:description><p><pop:description/></p></pop:description>
-				</div>
-				<pop:content from="features">
-				<pop:days>
-				<ul class="menu_list">
-					<pop:entries_for start="<pop:date/>" end="<pop:tomorrow/>">
-						<li class="menu_item">
-							<h3 class="entry_title"><pop:date/> <pop:title/></h3>
-							<pop:description wrap="p" class="menu_description"/>
+			<article class="feature_section">
+				<ul class="feature_list">
+					<pop:expire_date:todays_features start="<pop:date/>" end="<pop:tomorrow/>">
+						<li class="feature_item">
+							<h3 class="entry_title"><pop:title/></h3>
+							<pop:body/>
 						</li>
-					</pop:entries_for>
+					</pop:expire_date:todays_features>
 				</ul>
-				</pop:days>
-					</pop:content>
 			</article>
-		</pop:categories>
 	</div>
-
+</pop:content>
 </pop:block>
