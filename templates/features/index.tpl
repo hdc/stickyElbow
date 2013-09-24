@@ -15,18 +15,23 @@
 		<h1 class="hdr_primary" style="color:<pop:section.text_color/>;"><pop:section.title/> for <pop:content.updated_at format="mm/dd" /></h1>
 	</div>
 
-<pop:content>
+
 	<div class="tse_main">
 			<article class="feature_section">
 				<ul class="feature_list">
-					<pop:expire_date:todays_features start="<pop:date/>" end="<pop:tomorrow/>">
+          <pop:expire_date:features start="<pop:start/>" end="<pop:end/>">
 						<li class="feature_item">
-							<h3 class="entry_title"><pop:title/></h3>
+              <h3 class="entry_title"><pop:categories.title/> <pop:title/></h3>
 							<pop:body/>
 						</li>
-					</pop:expire_date:todays_features>
+           </pop:expire_date:features>
+	    
 				</ul>
 			</article>
+    
+
+     
+
 	</div>
-</pop:content>
+
 </pop:block>
