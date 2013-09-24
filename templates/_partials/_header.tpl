@@ -5,13 +5,3 @@
       </figure>
     </a>
   </header>
-  
-  <nav class="main_nav" role="navigation">
-    <ul>
-      <pop:sections except="settings">
-        <li class="<pop:active>active</pop:active>">
-          <a href="<pop:permalink/>"><pop:title/></a>
-        </li>
-      </pop:sections>
-    </ul>
-  </nav>

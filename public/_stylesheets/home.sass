@@ -3,8 +3,7 @@
 
 @import common
 
-
-html,body
+html, body
 	@extend %position-absolute
 	@extend %centered
 	width: 100%
@@ -18,90 +17,38 @@ html,body
 	height: 100%
 
 .tse_home
+	@extend %position-absolute
 	height: 100%
 	width: 100%
 	background-attachment: fixed
 	background-position: center center
 	background-repeat: none
+	top: 0
+	bottom: em(75px)
+	right: 0
+	left: 0
 	+background-size(cover)
 	+box-shadow(rgba(black, .2) 0 0 20px 20px inset)
 
 
-%spacer
-	@extend %position-absolute
-	background-color: $tan
-
-.spacer_top,.spacer_bottom
-	@extend %spacer
-	right: 0
-	left: 0
-	height: em(15px)
-
-.spacer_bottom
-	bottom: 0
-
-.spacer_right,.spacer_left
-	@extend %spacer
-	top: 0
-	bottom: 0
-	width: em(15px)
-
-.spacer_right
-	right: 0
-
-.scroll_helper
-	@extend %position-absolute
-	@extend %center-text
-	@extend %icon
-	@extend %icon-arrow-down
-	@extend %centered
-	bottom: rhythm(-3.5,$ms7)
-	left: 50%
-	background: $tan
-	width: rhythm(7,$ms7)
-	height: rhythm(7,$ms7)
-	margin-left: rhythm(-3.5,$ms7)
-	color: $baseFontColor
-	+adjust-font-size-to($ms7,0)
-	+border-radius(100%)
-	&:before
-		@extend %display-inline-block
-		margin-right: 0
-		margin-top: rhythm(1.75,$ms7)
-
-	em
-		@extend %visuallyhidden
-
-
 .hero_text
 	@extend %position-absolute
-	top: 40%
-	left: 20%
+	width: 80%
+	top: 35%
+	left: 50%
+	margin-left: -40%
 
 	h1
 		@extend %center-text
-		@extend %header-stack
-		@extend %caps
 		@extend %no-margin
-		background: rgba($gray,.8)
-		color: $white
+		border-top: 1px solid $tan
+		border-bottom: 1px solid $tan
+		color: $tan
+		font-weight: normal
 		letter-spacing: em(1px)
-		padding: rhythm(.15) rhythm(.25)
-		+adjust-font-size-to($ms9)
+		padding: 2%
+		+adjust-font-size-to($ms4,2)
 
-
-
-// Defines copy area below full_frame
-.tse_intro
-	@extend %position-relative
-	@extend %clearfix
-	background-color: $orange
-	margin-top: rhythm(-3)
-	padding: $grid-padding
-	+adjust-font-size-to($ms3,2.25)
-
-	p
-		padding: 0 12%
 
 
 

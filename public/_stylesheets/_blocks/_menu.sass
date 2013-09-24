@@ -1,30 +1,28 @@
-
 .menu_section
 	@extend %clearfix
-	border-top: 1px solid darken($tan,30%)
+	border-top: 1px solid darken($tan, 30%)
 	color: $gray
 	+padding-leader(1.5)
 	+trailer(1)
 	//+susy-grid-background
-
 	&:first-of-type
 		border-top: none
 
 	.menu_section_intro
-		+span-columns(2,8)
+		+span-columns(2, 8)
 
 		p
 			@extend %no-margin
 
 	.menu_list
 		@extend %clearfix
-		+span_columns(6 omega,8)
+		+span_columns(6 omega, 8)
 		+trailer(0)
 
 		li
 			margin-bottom: rhythm(1)
-			+span_columns(2,6)
-			+nth-omega(3n)
+			+span_columns(2, 6)
+			+nth-omega(3 n)
 			&:nth-child(3n+1)
 				@extend %clear
 

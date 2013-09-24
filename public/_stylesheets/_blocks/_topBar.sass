@@ -1,5 +1,4 @@
 // Styles out the top nav bar
-
 .top_bar
 	@extend %position-relative
 	height: rhythm(4.5)
@@ -21,8 +20,8 @@
 		color: $tan
 		font-weight: normal
 		letter-spacing: em(1px)
-		+adjust-font-size-to($ms4,0)
-		+adjust-leading-to(1,$ms1)
+		+adjust-font-size-to($ms4, 0)
+		+adjust-leading-to(1, $ms1)
 
 		&:after
 			content: "/"
@@ -54,11 +53,9 @@
 				&:after
 					color: $gray
 
-
 .contact_panel
 	color: $gray
 	z-index: 5
-
 
 	ul
 		@extend %clearfix
@@ -73,7 +70,6 @@
 			a
 				#{$link}
 					color: $gray
-
 
 			.tse_phone
 				@extend %text-bold

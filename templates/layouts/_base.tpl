@@ -29,13 +29,20 @@
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
 
-  <pop:include template="_partials/_header" />
+    <nav class="main_nav" role="navigation">
+      <ul>
+        <pop:sections except="settings">
+          <li class="<pop:active>active</pop:active>">
+            <a href="<pop:permalink/>"><pop:title/></a>
+          </li>
+        </pop:sections>
+      </ul>
+    </nav>
+
 
     <div class="tse_wrapper">
 
-        <section class="top_bar">
-            <pop:region name="top_bar"/>
-        </section>
+        <pop:include template="_partials/_header" />
 
         <pop:region name="tse_main"/>
 

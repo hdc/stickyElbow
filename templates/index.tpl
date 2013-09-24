@@ -9,22 +9,11 @@
         <pop:content>
             <pop:slider>
                 <section class="tse_home" style="background-image: url('<pop:src/>');">
-                    <span class="spacer_top"></span>
-                    <span class="spacer_right"></span>
-                    <span class="spacer_bottom"></span>
-                    <span class="spacer_left"></span>
                     <div class="hero_text">
-                        <h1>Experience Something New</h1>
+                        <h1><pop:content.intro/></h1>
                     </div>
-                    <a href="#intro" class="scroll_helper"><em>Scroll down</em></a>
                 </section>
              </pop:slider>
         </pop:content>
-    </div>
-
-    <div class="tse_intro" id="intro">
-        <div class="section">
-            <p><pop:content.intro/></p>
-        </div>
     </div>
 </pop:block>

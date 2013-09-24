@@ -6,62 +6,61 @@ $column-width: em(134px)
 $gutter-width: em(40px)
 $grid-padding: $gutter-width
 
-
 $fixed-left-bar: em(240px)
 $aside-col-width: em(178px)
 $site-width: em(1180px)
 
-.section,.site_width
-	+container
-	//+susy-grid-background
+.section, .site_width
+  +container
 
+//+susy-grid-background
 // Fixed left bar desktop
-.branding, .main_nav
-	@extend %position-fixed
-	left: 0
-	width: $fixed-left-bar
-
-.branding
-	z-index: 5
 
 .main_nav
-	background: $gray
-	top: 0
-	bottom: 0
-	padding: rhythm(1)
-	z-index: 4
-	+padding-leader(8.75)
-	+box-shadow($gray 0 0 5px 0)
+  @extend %position-fixed
+  right: 0
+  width: $fixed-left-bar
+
+.branding
+  @extend %position-absolute
+  left: 0
+  z-index: 99
+
+.main_nav
+  background: $orange
+  top: 0
+  bottom: 0
+  padding: rhythm(1)
+  z-index: 4
+  +box-shadow($gray 0 0 2px 0 inset)
 
 .tse_wrapper
-	@extend %position-relative
-	margin-left: $fixed-left-bar
-	height: 100%
-
+  @extend %position-relative
+  height: 100%
+  z-index: 99
 
 // Main
-
 .tse_main
-	@extend %position-relative
-	padding: 0 rhythm(4)
-
+  @extend %position-relative
+  padding: 0 rhythm(4)
 
 // Aside
 .tse_aside
-	@extend %position-absolute
-	top: 0
-	right: 0
-	bottom: 0
-	height: 100%
-	width: $aside-col-width
-	z-index: 3
+  @extend %position-absolute
+  top: 0
+  right: 0
+  bottom: 0
+  height: 100%
+  width: $aside-col-width
+  z-index: 3
 
 .aside_content
-	background: #e0dfcf
-	padding-bottom: rhythm(2)
+  background: #e0dfcf
+  padding-bottom: rhythm(2)
 
 .page_content
-	margin-bottom: em(85px)
+  margin-bottom: em(85px)
+
 
 
 
