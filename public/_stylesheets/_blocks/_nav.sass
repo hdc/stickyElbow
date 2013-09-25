@@ -1,25 +1,80 @@
 // Main Navigation
 // ----------------------------------------- //
 .main_nav
+	padding: rhythm(3) rhythm(1.5)
 
-	ul
-		@extend %no-bullets
-		@extend %no-margin-or-padding
-		+adjust-font-size-to($ms1)
-		a
-			#{$link}
-				@extend %no-text-decoration
-				@extend %color-transition
-				@extend %border-transition
-				@extend %display-inline-block
-				border-bottom: 1px solid transparent
-				color: $tan
-				+trailer(.75)
-			#{$focus}
+	nav
+		ul
+			@extend %caps
+			@extend %header-stack
+			@extend %no-bullets
+			@extend %no-margin-or-padding
+			+adjust-font-size-to($ms2_plus)
+			a
+				#{$link}
+					@extend %no-text-decoration
+					@extend %color-transition
+					@extend %border-transition
+					@extend %display-inline-block
+					border-bottom: 1px solid transparent
+					color: $white
+					+trailer(.25)
+				#{$focus}
+					border-bottom: 1px solid $orange
+					color: $orange
+
+			> li.active a
 				border-bottom: 1px solid $orange
 				color: $orange
 
-		> li.active a
-			border-bottom: 1px solid $orange
-			color: $orange
+
+	.social_connect
+		@extend %center-text
+		+adjust-font-size-to($ms2)
+		+leader(2)
+
+		a
+			#{$link}
+				@extend %display-inline-block
+				color: $white
+
+				&.fb
+					@extend %icon
+					@extend %icon-facebook
+				&.tw
+					@extend %icon
+					@extend %icon-twitter
+				&.ig
+					@extend %icon
+					@extend %icon-instagram
+
+				em
+					@extend %visuallyhidden
+
+
+
+
+.close_btn
+	#{$link}
+		@extend %icon
+		@extend %icon-cancel
+		@extend %position-absolute
+		top: rhythm(.75)
+		right: rhythm(1)
+		color: lighten($tan,10%)
+		display: block
+		padding: 0
+		border: 0
+		outline: none
+		overflow: hidden
+		white-space: nowrap
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+		+adjust-font-size-to($ms2)
+		+opacity(.9)
+
+	#{$focus}
+		+opacity(1)
+
+	span
+		@extend %visuallyhidden
 			

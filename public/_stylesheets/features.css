@@ -476,16 +476,16 @@ a:hover, a:focus, a:active {
 .page_content {
   margin-bottom: 5.3125em; }
 
-/* line 1, /_stylesheets/_blocks/_branding.sass */
+/* line 1, /_stylesheets/_blocks/_header.sass */
 .logo {
   background: #e9e8db;
   width: 15em;
   height: 6.46875em;
   display: block; }
-  /* line 7, /_stylesheets/_blocks/_branding.sass */
+  /* line 7, /_stylesheets/_blocks/_header.sass */
   .logo figure {
     padding: 1.4375em; }
-  /* line 10, /_stylesheets/_blocks/_branding.sass */
+  /* line 10, /_stylesheets/_blocks/_header.sass */
   .logo img {
     max-width: 100%;
     _width: 100%;
