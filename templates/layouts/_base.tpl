@@ -29,18 +29,27 @@
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
 
-    <nav class="main_nav" role="navigation">
-      <ul>
-        <pop:sections except="settings">
-          <li class="<pop:active>active</pop:active>">
-            <a href="<pop:permalink/>"><pop:title/></a>
-          </li>
-        </pop:sections>
-      </ul>
-    </nav>
+	<div class="main_nav">
+		<nav id="nav" role="navigation">
+		  <ul>
+			<pop:sections except="settings">
+			  <li class="<pop:active>active</pop:active>">
+				<a href="<pop:permalink/>"><pop:title/></a>
+			  </li>
+			</pop:sections>
+		  </ul>
+		<a class="close_btn" id="navCloseBtn" href="#top"><span>Return to Content</span></a>
+		</nav>
+
+		<div class="social_connect">
+			<a class="fb" href=""><em>Like us on Facebook</em></a>
+			<a class="ig" href=""><em>Hashtag on Intagram</em></a>
+			<a class="tw" href=""><em>Follow on Twitter</em></a>
+		</div>
+	</div>
 
 
-    <div class="tse_wrapper">
+    <div class="tse_wrapper" id="tse_push">
 
         <pop:include template="_partials/_header" />
 

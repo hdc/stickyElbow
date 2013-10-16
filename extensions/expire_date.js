@@ -2,7 +2,7 @@ exports.features = function(options) {
     if (!section) return null;
 
     var start = new Date();
-  	var start = new Date(start.setHours(start.getHours() - 4));
+  	var start = new Date(start.setHours(start.getHours() - 8));
     var end = new Date(start.getTime() + (60 * 60 * 23 * 1000));
 
 

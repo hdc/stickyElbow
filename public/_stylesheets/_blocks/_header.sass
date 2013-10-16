@@ -1,0 +1,54 @@
+.branding
+	background-color: $gray
+	background-color: rgba($gray, .85)
+	border: 1px solid darken($gray,10%)
+	height: em(85px)
+	width: 100%
+
+
+.logo
+	width: em(240px)
+	display: block
+
+	figure
+		padding: rhythm(.25) rhythm(1) rhythm(1)
+
+	img
+		max-width: 100%
+		_width: 100%
+		height: auto
+
+	.name
+		@extend %visuallyhidden
+
+
+// Target to expand main nav
+.nav_btn
+
+	#{$link}
+		@extend %icon-after
+		@extend %icon-reorder
+		@extend %position-absolute
+		top: rhythm(.6)
+		right: rhythm(1)
+		color: lighten($tan,10%)
+		display: block
+		padding: 0
+		border: 0
+		outline: none
+		overflow: hidden
+		white-space: nowrap
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+		z-index: 999
+
+		+adjust-font-size-to($ms3)
+		+opacity(.9)
+
+	#{$focus}
+		+opacity(1)
+
+	span
+		@extend %caps
+		@extend %header-stack
+
+	
