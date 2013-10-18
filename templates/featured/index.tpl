@@ -3,7 +3,7 @@
 
 
 <pop:block region="stylesheets">
-	<pop:stylesheet name="/_stylesheets/featured.css"/>
+	<pop:stylesheet name="/_stylesheets/menus.css"/>
 </pop:block>
 
 <pop:block region="tse_main">
@@ -14,22 +14,31 @@
 
 
 	<div class="tse_main">
-		<article class="feature_section">
-			<pop:content from="brunch-2">
-				<pop:title/>
-				<pop:body/>
-			</pop:content>
+		<pop:categories>
+			<pop:title wrap="h2" class="menu_category"/>
+			<pop:description wrap="p"/>
+			<pop:categories>
+				<pop:entries order="title ASC" repeat="false">
+					<pop:values>
+						<pop:title wrap="h3" class="entry_title"/>
+						<div>
+							<pop:title wrap="p"/>
+							<pop:description wrap="p" class="menu_description"/>
+						</div>
+					</pop:values>
+				</pop:entries>
 
-			<pop:content from="dinners">
-				<pop:title/>
-				<pop:body/>
-			</pop:content>
+			</pop:categories>
+			<pop:no_categories>
+				<pop:entries order="title ASC">
+					<div>
+						<pop:title wrap="p"/>
+						<pop:description wrap="p" class="menu_description"/>
+					</div>
+				</pop:entries>
+			</pop:no_categories>
+		</pop:categories>
 
-			<pop:content from="drinks-2">
-				<pop:title/>
-				<pop:body/>
-			</pop:content>
-		</article>
 	</div>
 
 </pop:block>

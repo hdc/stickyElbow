@@ -51,14 +51,11 @@
 
 
     <div class="tse_wrapper" id="tse_push">
+	        <pop:include template="_partials/_header" />
 
-        <pop:include template="_partials/_header" />
-
-        <pop:region name="tse_main"/>
-
-        <pop:include template="_partials/_footer" />
-
+	        <pop:region name="tse_main"/>
     </div>
+	<pop:include template="_partials/_footer" />
 
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
